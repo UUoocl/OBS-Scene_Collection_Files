@@ -6,28 +6,28 @@
             "name": "Scene"
         }
     ],
-    "name": "ScreenShare",
+    "name": "FollowMouse",
     "groups": [],
     "quick_transitions": [
         {
             "name": "Cut",
             "duration": 300,
             "hotkeys": [],
-            "id": 22,
+            "id": 25,
             "fade_to_black": false
         },
         {
             "name": "Fade",
             "duration": 300,
             "hotkeys": [],
-            "id": 23,
+            "id": 26,
             "fade_to_black": false
         },
         {
             "name": "Fade",
             "duration": 300,
             "hotkeys": [],
-            "id": 24,
+            "id": 27,
             "fade_to_black": true
         }
     ],
@@ -37,7 +37,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": true,
-    "scaling_level": -1,
+    "scaling_level": -4,
     "scaling_off_x": -0.0,
     "scaling_off_y": -0.0,
     "virtual-camera": {
@@ -106,6 +106,2173 @@
             },
             "macros": [
                 {
+                    "name": "Settings",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": true,
+                    "groupData": {
+                        "collapsed": true,
+                        "size": 15
+                    }
+                },
+                {
+                    "name": "Variables",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 549
+                        },
+                        {
+                            "pos": 548
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 510
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "variableName": "Radius",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 1,
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": false,
+                                "options": 0
+                            }
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Radius",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "200",
+                            "numValue": 0.0,
+                            "condition": 0,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "WidthSize",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "960",
+                            "numValue": 0.0,
+                            "condition": 0,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Height",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "540",
+                            "numValue": 0.0,
+                            "condition": 0,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Zoom",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "100",
+                            "numValue": 0.0,
+                            "condition": 0,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "LeftMouseClicked",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 586
+                        },
+                        {
+                            "pos": 585
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 547
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "cursor",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "condition": 2,
+                            "button": 0,
+                            "minX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "minY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "version": 1
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Shadow"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "glow_position",
+                                "description": "Position"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"blur_type\": 1,\n    \"fill\": false,\n    \"glow_fill_color\": 4294911488,\n    \"glow_intensity\": 200,\n    \"glow_offset_angle\": 0,\n    \"glow_offset_distance\": 50,\n    \"glow_position\": 2,\n    \"glow_size\": 0,\n    \"ignore_source_border\": false\n}\n",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Shadow"
+                            },
+                            "action": 0,
+                            "inputMethod": 0,
+                            "sourceSetting": {
+                                "id": "glow_position",
+                                "description": "Position"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "wait",
+                            "enabled": true,
+                            "duration": {
+                                "value": {
+                                    "value": 0.40000000000000002,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "duration2": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "waitType": 0,
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Shadow"
+                            },
+                            "action": 1,
+                            "inputMethod": 0,
+                            "sourceSetting": {
+                                "id": "glow_position",
+                                "description": "Position"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "RightMouseClicked",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 586
+                        },
+                        {
+                            "pos": 585
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 547
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "cursor",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "condition": 2,
+                            "button": 2,
+                            "minX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "minY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "version": 1
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Shadow"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "glow_position",
+                                "description": "Position"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"blur_type\": 1,\n    \"fill\": false,\n    \"glow_fill_color\": 4278190335,\n    \"glow_intensity\": 200,\n    \"glow_offset_angle\": -180,\n    \"glow_offset_distance\": 50,\n    \"glow_position\": 2,\n    \"glow_size\": 0,\n    \"ignore_source_border\": false\n}\n",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Shadow"
+                            },
+                            "action": 0,
+                            "inputMethod": 0,
+                            "sourceSetting": {
+                                "id": "glow_position",
+                                "description": "Position"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "wait",
+                            "enabled": true,
+                            "duration": {
+                                "value": {
+                                    "value": 0.5,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "duration2": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "waitType": 0,
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Shadow"
+                            },
+                            "action": 1,
+                            "inputMethod": 0,
+                            "sourceSetting": {
+                                "id": "glow_position",
+                                "description": "Position"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Show Cursor",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 529
+                        },
+                        {
+                            "pos": 586
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 548
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Show Cursor Macro trigger hotkey",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM1"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "source",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "action": 2,
+                            "sourceSettingButton": {
+                                "id": "",
+                                "description": ""
+                            },
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "capture_cursor",
+                                "description": "Capture Cursor"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"capture_cursor\": true\n}\n",
+                            "deinterlaceMode": 0,
+                            "deinterlaceOrder": 0
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Hide Cursor",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 529
+                        },
+                        {
+                            "pos": 586
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 548
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Hide Cursor Macro trigger hotkey",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM0"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "source",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "action": 2,
+                            "sourceSettingButton": {
+                                "id": "",
+                                "description": ""
+                            },
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "capture_cursor",
+                                "description": "Capture Cursor"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"capture_cursor\": false\n}\n",
+                            "deinterlaceMode": 0,
+                            "deinterlaceOrder": 0
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Shape Circle",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 558
+                        },
+                        {
+                            "pos": 557
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 519
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Shape Circle trigger hotkey",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM8"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Advanced Mask"
+                            },
+                            "action": 3,
+                            "inputMethod": 0,
+                            "sourceSetting": {
+                                "id": "shape_type",
+                                "description": "Shape"
+                            },
+                            "manualSettingValue": "2",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Shape Rectangle",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 558
+                        },
+                        {
+                            "pos": 557
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 519
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Shape Rectangle trigger hotkey",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM9"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Advanced Mask"
+                            },
+                            "action": 3,
+                            "inputMethod": 0,
+                            "sourceSetting": {
+                                "id": "shape_type",
+                                "description": "Shape"
+                            },
+                            "manualSettingValue": "1",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Increase Size",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 248
+                        },
+                        {
+                            "pos": 849
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 811
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Size Increase Macro trigger",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM3"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Height",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 100.0,
+                            "condition": 3,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "WidthSize",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 100.0,
+                            "condition": 10,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "${Height}*1.7777778",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"rectangle_height\": ${Height},\n    \"rectangle_width\": ${WidthSize}\n  }",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"rectangle_height\": ${Height},\n    \"rectangle_width\": ${WidthSize},\n  }",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Decrease Size",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 549
+                        },
+                        {
+                            "pos": 548
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 510
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Size Decrease Macro trigger",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM2"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Height",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 100.0,
+                            "condition": 4,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "WidthSize",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 4.0,
+                            "condition": 10,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "${Height}*1.7777778",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"rectangle_height\": ${Height},\n    \"rectangle_width\": ${WidthSize}\n  }",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"rectangle_height\": ${Height},\n    \"rectangle_width\": ${WidthSize}\n  }",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Increase Zoom",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 295
+                        },
+                        {
+                            "pos": 802
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 764
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Zoom Increase Macro trigger",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM5"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Zoom",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 50.0,
+                            "condition": 3,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"source_zoom\": ${Zoom}\n}",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"source_zoom\": ${Zoom}\n}",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Decrease Zoom",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 549
+                        },
+                        {
+                            "pos": 548
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 510
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Zoom Decrease Macro trigger",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM4"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Zoom",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 50.0,
+                            "condition": 4,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"source_zoom\": ${Zoom}\n}\n",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"source_zoom\": ${Zoom}\n}\n",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Increase Radius",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 549
+                        },
+                        {
+                            "pos": 548
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 510
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Radius Increase Macro trigger",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM6"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Radius",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 50.0,
+                            "condition": 3,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Decrease Radius",
+                    "pause": false,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 549
+                        },
+                        {
+                            "pos": 548
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 510
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Radius Decrease Macro trigger",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_NUM7"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "Radius",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 50.0,
+                            "condition": 4,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Show BG Blur",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 305
+                        },
+                        {
+                            "pos": 792
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 754
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "show BG Blur Macro trigger hotkey",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "key": "OBS_KEY_NUM1"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture BG"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value Composite Blur"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"filter\": \"Composite Blur\",\n    \"move_value_type\": 1,\n    \"pixelate_origin_x\": 6000,\n    \"pixelate_origin_y\": 6000,\n    \"pixelate_rotation\": -360,\n    \"pixelate_smoothing_pct\": 49.6,\n    \"radius\": 34,\n    \"value_type\": 0\n}\n",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture BG"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value Composite Blur"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"filter\": \"Composite Blur\",\n    \"move_value_type\": 1,\n    \"pixelate_origin_x\": 6000,\n    \"pixelate_origin_y\": 6000,\n    \"pixelate_rotation\": -360,\n    \"pixelate_smoothing_pct\": 49.6,\n    \"radius\": 1,\n    \"value_type\": 0\n}\n",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Hide BG Blur",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 549
+                        },
+                        {
+                            "pos": 548
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 510
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "Hide BG Blur Macro trigger hotkey",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "key": "OBS_KEY_NUM0"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture BG"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value Composite Blur"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"filter\": \"Composite Blur\",\n    \"move_value_type\": 1,\n    \"pixelate_origin_x\": 6000,\n    \"pixelate_origin_y\": 6000,\n    \"pixelate_rotation\": -360,\n    \"pixelate_smoothing_pct\": 49.6,\n    \"radius\": 1,\n    \"value_type\": 0\n}\n",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture BG"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value Composite Blur"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"filter\": \"Composite Blur\",\n    \"move_value_type\": 1,\n    \"pixelate_origin_x\": 6000,\n    \"pixelate_origin_y\": 6000,\n    \"pixelate_rotation\": -360,\n    \"pixelate_smoothing_pct\": 49.6,\n    \"radius\": 1,\n    \"value_type\": 0\n}\n",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "Scenes",
+                    "pause": false,
+                    "parallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "group": true,
+                    "groupData": {
+                        "collapsed": true,
+                        "size": 7
+                    }
+                },
+                {
                     "name": "FullScreenSwitch_Hotkey",
                     "pause": false,
                     "parallel": true,
@@ -126,15 +2293,15 @@
                     },
                     "macroActionConditionSplitterPosition": [
                         {
-                            "pos": 192
+                            "pos": 263
                         },
                         {
-                            "pos": 608
+                            "pos": 834
                         }
                     ],
                     "macroElseActionSplitterPosition": [
                         {
-                            "pos": 570
+                            "pos": 796
                         },
                         {
                             "pos": 0
@@ -217,15 +2384,26 @@
                         },
                         {
                             "collapsed": false,
+                            "id": "macro",
+                            "enabled": true,
+                            "macro": "FollowMouse",
+                            "actionIndex": {
+                                "value": 1,
+                                "type": 0
+                            },
+                            "action": 0
+                        },
+                        {
+                            "collapsed": false,
                             "id": "filter",
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 3,
                             "inputMethod": 2,
@@ -245,7 +2423,7 @@
                         {
                             "collapsed": false,
                             "id": "filter",
-                            "enabled": true,
+                            "enabled": false,
                             "source": {
                                 "type": 0,
                                 "name": "Display Capture"
@@ -275,11 +2453,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 0,
                             "inputMethod": 2,
@@ -299,7 +2477,7 @@
                         {
                             "collapsed": false,
                             "id": "filter",
-                            "enabled": true,
+                            "enabled": false,
                             "source": {
                                 "type": 0,
                                 "name": "Display Capture"
@@ -347,15 +2525,15 @@
                     },
                     "macroActionConditionSplitterPosition": [
                         {
-                            "pos": 220
+                            "pos": 336
                         },
                         {
-                            "pos": 580
+                            "pos": 761
                         }
                     ],
                     "macroElseActionSplitterPosition": [
                         {
-                            "pos": 542
+                            "pos": 723
                         },
                         {
                             "pos": 0
@@ -432,6 +2610,17 @@
                             "id": "macro",
                             "enabled": true,
                             "macro": "ZoomRegion",
+                            "actionIndex": {
+                                "value": 1,
+                                "type": 0
+                            },
+                            "action": 0
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "macro",
+                            "enabled": true,
+                            "macro": "FollowMouse",
                             "actionIndex": {
                                 "value": 1,
                                 "type": 0
@@ -666,11 +2855,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 3,
                             "inputMethod": 2,
@@ -693,11 +2882,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture"
+                                "name": "Display Capture BG"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Blur Value"
+                                "name": "Move Value Composite Blur"
                             },
                             "action": 3,
                             "inputMethod": 2,
@@ -720,11 +2909,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 0,
                             "inputMethod": 2,
@@ -747,11 +2936,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture"
+                                "name": "Display Capture BG"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Blur Value"
+                                "name": "Move Value Composite Blur"
                             },
                             "action": 0,
                             "inputMethod": 2,
@@ -803,15 +2992,15 @@
                     },
                     "macroActionConditionSplitterPosition": [
                         {
-                            "pos": 246
+                            "pos": 321
                         },
                         {
-                            "pos": 554
+                            "pos": 776
                         }
                     ],
                     "macroElseActionSplitterPosition": [
                         {
-                            "pos": 516
+                            "pos": 738
                         },
                         {
                             "pos": 0
@@ -896,6 +3085,17 @@
                         },
                         {
                             "collapsed": false,
+                            "id": "macro",
+                            "enabled": true,
+                            "macro": "FollowMouse",
+                            "actionIndex": {
+                                "value": 1,
+                                "type": 0
+                            },
+                            "action": 0
+                        },
+                        {
+                            "collapsed": false,
                             "id": "variable",
                             "enabled": true,
                             "variableName": "MouseX",
@@ -1159,11 +3359,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 3,
                             "inputMethod": 2,
@@ -1186,11 +3386,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture"
+                                "name": "Display Capture BG"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Blur Value"
+                                "name": "Move Value Composite Blur"
                             },
                             "action": 3,
                             "inputMethod": 2,
@@ -1213,11 +3413,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 0,
                             "inputMethod": 2,
@@ -1240,11 +3440,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture"
+                                "name": "Display Capture BG"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Blur Value"
+                                "name": "Move Value Composite Blur"
                             },
                             "action": 0,
                             "inputMethod": 2,
@@ -1276,8 +3476,8 @@
                     "elseActions": []
                 },
                 {
-                    "name": "HighlightRegion",
-                    "pause": true,
+                    "name": "FollowMouse Hotkey",
+                    "pause": false,
                     "parallel": true,
                     "onChange": false,
                     "skipExecOnStart": false,
@@ -1296,15 +3496,15 @@
                     },
                     "macroActionConditionSplitterPosition": [
                         {
-                            "pos": 185
+                            "pos": 444
                         },
                         {
-                            "pos": 615
+                            "pos": 653
                         }
                     ],
                     "macroElseActionSplitterPosition": [
                         {
-                            "pos": 577
+                            "pos": 615
                         },
                         {
                             "pos": 0
@@ -1331,6 +3531,454 @@
                                 }
                             },
                             "condition": 0,
+                            "button": 0,
+                            "minX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "minY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxX": {
+                                "value": 1920,
+                                "type": 0
+                            },
+                            "maxY": {
+                                "value": 1080,
+                                "type": 0
+                            },
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "hotkey",
+                            "logic": 101,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "desc": "FollowMouse Macro trigger hotkey",
+                            "keyBind": [
+                                {
+                                    "control": true,
+                                    "alt": true,
+                                    "key": "OBS_KEY_R"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": false,
+                            "id": "macro",
+                            "enabled": true,
+                            "macro": "ZoomRegion",
+                            "actionIndex": {
+                                "value": 1,
+                                "type": 0
+                            },
+                            "action": 0
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "macro",
+                            "enabled": true,
+                            "macro": "HighlightRegion",
+                            "actionIndex": {
+                                "value": 1,
+                                "type": 0
+                            },
+                            "action": 0
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "macro",
+                            "enabled": true,
+                            "macro": "FollowMouse",
+                            "actionIndex": {
+                                "value": 1,
+                                "type": 0
+                            },
+                            "action": 1
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseX",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 5,
+                            "segmentIdx": 0,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseY",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 5,
+                            "segmentIdx": 0,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseX",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 8,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".* ",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": true,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseY",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 8,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": " .*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": true,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": false,
+                            "variableName": "CenterX",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 10,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "switch{\ncase ${MouseX} < 538: 479;\ncase ${MouseX} > 537 and ${MouseX} < 1383: 960;\ncase ${MouseX} > 1382: 1440;\n}",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": false,
+                            "variableName": "CenterY",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 10,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "switch{\ncase ${MouseY} < 540 : 274;\ncase ${MouseY} > 541 : 806;\n}",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "Advanced Mask",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"circle_radius\":${MouseY},\n    \"duration\": 300,\n    \"easing_function_match\": 5,\n    \"easing_match\": 0,\n    \"end_delay\": 0,\n    \"filter\": \"Advanced Mask\",\n    \"heart_size\": 800,\n    \"mask_gradient_position\": 960,\n    \"mask_gradient_rotation\": 0,\n    \"mask_gradient_width\": 500,\n    \"mask_source_filter_multiplier\": 1,\n    \"move_value_type\": 1,\n    \"position_scale\": 100,\n    \"position_x\": ${MouseX},\n    \"position_y\": ${MouseY},\n    \"rectangle_corner_radius\": 20,\n    \"rectangle_corner_type\": 1,\n    \"rectangle_height\": ${Height},\n    \"rectangle_width\":  ${WidthSize},\n    \"scale_type\": 1,\n    \"setting_float\": 938,\n    \"setting_float_max\": 930,\n    \"setting_float_min\": 930,\n    \"setting_name\": \"shape_center_x\",\n    \"shape_center_x\": ${MouseX},\n    \"shape_center_y\": ${MouseY},\n    \"shape_ellipse_a\": 800,\n    \"shape_ellipse_b\": 600,\n    \"shape_feather_amount\": 0,\n    \"shape_feather_type\": 1,\n    \"shape_relative\": true,\n    \"shape_rotation\": 0,\n    \"shape_star_inner_radius\": 50,\n    \"shape_star_num_points\": 5,\n    \"shape_star_outer_radius\": 400,\n    \"source_range_max\": 0,\n    \"source_range_min\": 0,\n    \"source_zoom\": ${Zoom},\n    \"star_corner_radius\": 0,\n    \"value_type\": 2\n}",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "Advanced Mask",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"filter\": \"Advanced Mask\",\n    \"move_value_type\": 1,\n    \"rectangle_corner_radius\": 26,\n    \"rectangle_height\": 450,\n    \"rectangle_width\": 800,\n    \"setting_float\": 938,\n    \"setting_float_max\": 930,\n    \"setting_float_min\": 930,\n    \"setting_name\": \"shape_center_x\",\n    \"shape_center_x\": ${CenterX},\n    \"shape_center_y\": ${CenterY},\n    \"shape_rotation\": 0,\n    \"source_zoom\": 100,\n    \"value_type\": 2\n}\n",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "HighlightRegion",
+                    "pause": true,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 395
+                        },
+                        {
+                            "pos": 713
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 675
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "cursor",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "condition": 0,
+                            "button": 0,
+                            "minX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "minY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxX": {
+                                "value": 1920,
+                                "type": 0
+                            },
+                            "maxY": {
+                                "value": 1080,
+                                "type": 0
+                            },
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "cursor",
+                            "logic": 101,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "condition": 1,
                             "button": 0,
                             "minX": {
                                 "value": 0,
@@ -1390,7 +4038,7 @@
                             }
                         },
                         {
-                            "collapsed": false,
+                            "collapsed": true,
                             "id": "variable",
                             "enabled": true,
                             "variableName": "MouseY",
@@ -1427,7 +4075,7 @@
                             }
                         },
                         {
-                            "collapsed": false,
+                            "collapsed": true,
                             "id": "variable",
                             "enabled": true,
                             "variableName": "MouseX",
@@ -1464,7 +4112,7 @@
                             }
                         },
                         {
-                            "collapsed": false,
+                            "collapsed": true,
                             "id": "variable",
                             "enabled": true,
                             "variableName": "MouseY",
@@ -1580,11 +4228,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 3,
                             "inputMethod": 2,
@@ -1607,11 +4255,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 0,
                             "inputMethod": 2,
@@ -1634,7 +4282,7 @@
                 {
                     "name": "ZoomRegion",
                     "pause": true,
-                    "parallel": true,
+                    "parallel": false,
                     "onChange": false,
                     "skipExecOnStart": false,
                     "group": false,
@@ -1652,15 +4300,15 @@
                     },
                     "macroActionConditionSplitterPosition": [
                         {
-                            "pos": 246
+                            "pos": 342
                         },
                         {
-                            "pos": 554
+                            "pos": 829
                         }
                     ],
                     "macroElseActionSplitterPosition": [
                         {
-                            "pos": 516
+                            "pos": 791
                         },
                         {
                             "pos": 0
@@ -1687,6 +4335,41 @@
                                 }
                             },
                             "condition": 0,
+                            "button": 0,
+                            "minX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "minY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxX": {
+                                "value": 1920,
+                                "type": 0
+                            },
+                            "maxY": {
+                                "value": 1080,
+                                "type": 0
+                            },
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "cursor",
+                            "logic": 101,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "condition": 1,
                             "button": 0,
                             "minX": {
                                 "value": 0,
@@ -1936,11 +4619,11 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
                             },
                             "action": 3,
                             "inputMethod": 2,
@@ -1963,11 +4646,402 @@
                             "enabled": true,
                             "source": {
                                 "type": 0,
-                                "name": "Display Capture 2"
+                                "name": "Display Capture"
                             },
                             "filter": {
                                 "type": 0,
-                                "name": "Move Mask Position"
+                                "name": "Move Value"
+                            },
+                            "action": 0,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "Advanced Mask",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"filter\": \"Advanced Mask\",\n    \"move_value_type\": 1,\n    \"rectangle_corner_radius\": 26,\n    \"rectangle_height\": 450,\n    \"rectangle_width\": 800,\n    \"setting_float\": 938,\n    \"setting_float_max\": 930,\n    \"setting_float_min\": 930,\n    \"setting_name\": \"shape_center_x\",\n    \"shape_center_x\": ${CenterX},\n    \"shape_center_y\": ${CenterY},\n    \"shape_rotation\": 0,\n    \"source_zoom\": 100,\n    \"value_type\": 2\n}\n",
+                            "version": 1
+                        }
+                    ],
+                    "elseActions": []
+                },
+                {
+                    "name": "FollowMouse",
+                    "pause": true,
+                    "parallel": true,
+                    "onChange": false,
+                    "skipExecOnStart": false,
+                    "group": false,
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false."
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 313
+                        },
+                        {
+                            "pos": 784
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 746
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "collapsed": false,
+                            "id": "cursor",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "condition": 0,
+                            "button": 0,
+                            "minX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "minY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxX": {
+                                "value": 1920,
+                                "type": 0
+                            },
+                            "maxY": {
+                                "value": 1080,
+                                "type": 0
+                            },
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "cursor",
+                            "logic": 101,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "condition": 1,
+                            "button": 0,
+                            "minX": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "minY": {
+                                "value": 0,
+                                "type": 0
+                            },
+                            "maxX": {
+                                "value": 1920,
+                                "type": 0
+                            },
+                            "maxY": {
+                                "value": 1080,
+                                "type": 0
+                            },
+                            "version": 1
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseX",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 5,
+                            "segmentIdx": 0,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseY",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 5,
+                            "segmentIdx": 0,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseX",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 8,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".* ",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": true,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": true,
+                            "variableName": "MouseY",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 8,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": " .*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": true,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "( 1 + 2 * 3 ) / 4",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": false,
+                            "variableName": "CenterX",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 10,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "switch{\ncase ${MouseX} < 538: 479;\ncase ${MouseX} > 537 and ${MouseX} < 1383: 960;\ncase ${MouseX} > 1382: 1440;\n}",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": true,
+                            "id": "variable",
+                            "enabled": false,
+                            "variableName": "CenterY",
+                            "variable2Name": "Invalid varialbe selection",
+                            "strValue": "",
+                            "numValue": 0.0,
+                            "condition": 10,
+                            "segmentIdx": -1,
+                            "subStringStart": 0,
+                            "subStringSize": 0,
+                            "regexPattern": ".*",
+                            "regexMatchIdx": 0,
+                            "findStr": "Text to find",
+                            "replaceStr": "Text to replace with",
+                            "regexConfig": {
+                                "enable": false,
+                                "partial": true,
+                                "options": 0
+                            },
+                            "mathExpression": "switch{\ncase ${MouseY} < 540 : 274;\ncase ${MouseY} > 541 : 806;\n}",
+                            "useCustomPrompt": false,
+                            "inputPrompt": "Assign value to variable:",
+                            "useInputPlaceholder": false,
+                            "inputPlaceholder": "--enter text--",
+                            "environmentVariableName": "USERPROFILE",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            }
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
+                            },
+                            "action": 3,
+                            "inputMethod": 2,
+                            "sourceSetting": {
+                                "id": "filter",
+                                "description": "Filter"
+                            },
+                            "manualSettingValue": "Advanced Mask",
+                            "tempVar": {
+                                "type": 0,
+                                "idx": -1,
+                                "id": ""
+                            },
+                            "settings": "{\n    \"circle_radius\":${MouseY},\n    \"duration\": 300,\n    \"easing_function_match\": 5,\n    \"easing_match\": 0,\n    \"end_delay\": 0,\n    \"filter\": \"Advanced Mask\",\n    \"heart_size\": 800,\n    \"mask_gradient_position\": 960,\n    \"mask_gradient_rotation\": 0,\n    \"mask_gradient_width\": 500,\n    \"mask_source_filter_multiplier\": 1,\n    \"move_value_type\": 1,\n    \"position_scale\": 100,\n    \"position_x\": ${MouseX},\n    \"position_y\": ${MouseY},\n    \"rectangle_corner_radius\": 20,\n    \"rectangle_corner_type\": 1,\n    \"rectangle_height\": ${Height},\n    \"rectangle_width\":  ${WidthSize},\n    \"scale_type\": 1,\n    \"setting_float\": 938,\n    \"setting_float_max\": 930,\n    \"setting_float_min\": 930,\n    \"setting_name\": \"shape_center_x\",\n    \"shape_center_x\": ${MouseX},\n    \"shape_center_y\": ${MouseY},\n    \"shape_ellipse_a\": 800,\n    \"shape_ellipse_b\": 600,\n    \"shape_feather_amount\": 0,\n    \"shape_feather_type\": 1,\n    \"shape_relative\": true,\n    \"shape_rotation\": 0,\n    \"shape_star_inner_radius\": 50,\n    \"shape_star_num_points\": 5,\n    \"shape_star_outer_radius\": 400,\n    \"source_range_max\": 0,\n    \"source_range_min\": 0,\n    \"source_zoom\": ${Zoom},\n    \"star_corner_radius\": 0,\n    \"value_type\": 2\n}",
+                            "version": 1
+                        },
+                        {
+                            "collapsed": false,
+                            "id": "filter",
+                            "enabled": true,
+                            "source": {
+                                "type": 0,
+                                "name": "Display Capture"
+                            },
+                            "filter": {
+                                "type": 0,
+                                "name": "Move Value"
                             },
                             "action": 0,
                             "inputMethod": 2,
@@ -2006,6 +5080,31 @@
                 },
                 {
                     "name": "CenterY",
+                    "saveAction": 0,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "WidthSize",
+                    "saveAction": 0,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "ShowMouse",
+                    "saveAction": 0,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "Radius",
+                    "saveAction": 0,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "Height",
+                    "saveAction": 0,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "Zoom",
                     "saveAction": 0,
                     "defaultValue": ""
                 }
@@ -2057,7 +5156,7 @@
             "SendSceneChangeAll": true,
             "SendPreview": true,
             "triggers": [],
-            "interval": 300,
+            "interval": 50,
             "non_matching_scene": "",
             "switch_if_not_matching": 0,
             "noMatchDelay": {
@@ -2099,7 +5198,7 @@
             "threadPriority": 3,
             "transitionOverrideOverride": false,
             "adjustActiveTransitionType": true,
-            "lastImportPath": "",
+            "lastImportPath": "C:/Users/Jonathan/OneDrive/11 Github/OBS AdvSceneSwitcher/adv-ss-ScreenShare-2024.01.13.16.00.09.txt",
             "startHotkey": [],
             "stopHotkey": [],
             "toggleHotkey": [],
@@ -2125,16 +5224,16 @@
             "sceneGroupTabPos": 14,
             "triggerTabPos": 17,
             "saveWindowGeo": false,
-            "windowPosX": 2390,
-            "windowPosY": -235,
-            "windowWidth": 1294,
-            "windowHeight": 1017,
+            "windowPosX": 1757,
+            "windowPosY": -1440,
+            "windowWidth": 1000,
+            "windowHeight": 1325,
             "macroListMacroEditSplitterPosition": [
                 {
-                    "pos": 295
+                    "pos": 217
                 },
                 {
-                    "pos": 972
+                    "pos": 756
                 }
             ],
             "version": "267855fded058e22e682bf2888c822fb419d8b55",
@@ -2146,11 +5245,12 @@
         {
             "prev_ver": 503316482,
             "name": "Display Capture",
-            "uuid": "fe40a384-d93b-4f86-adc1-ac4faa3cb5b1",
+            "uuid": "49ab94c8-f395-4827-995d-bfc0265d213a",
             "id": "monitor_capture",
             "versioned_id": "monitor_capture",
             "settings": {
-                "monitor_id": "\\\\?\\DISPLAY#AUO23ED#5&2c8e85af&0&UID4353#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+                "monitor_id": "\\\\?\\DISPLAY#AUO23ED#5&2c8e85af&0&UID4353#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}",
+                "capture_cursor": true
             },
             "mixers": 0,
             "sync": 0,
@@ -2164,9 +5264,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "hotkeys": {
-                "Move Blur Value": [],
-                "CompositeBlur.Enable": [],
-                "CompositeBlur.Disable": []
+                "Move Value": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2175,21 +5273,51 @@
             "filters": [
                 {
                     "prev_ver": 503316482,
-                    "name": "Composite Blur",
-                    "uuid": "6f5f32ef-76f2-4186-85e1-1e654898c81d",
-                    "id": "obs_composite_blur",
-                    "versioned_id": "obs_composite_blur",
+                    "name": "Advanced Mask",
+                    "uuid": "17f70400-048f-4ff7-ab88-4026927804d0",
+                    "id": "advanced_masks_filter",
+                    "versioned_id": "advanced_masks_filter",
                     "settings": {
-                        "blur_algorithm": 4,
-                        "blur_type": 1,
-                        "pixelate_rotation": -360.0,
-                        "pixelate_smoothing_pct": 49.600000000000001,
-                        "radius": 1.0,
-                        "pixelate_origin_x": 6000.0,
-                        "pixelate_origin_y": 6000.0,
-                        "filter": "Composite Blur",
-                        "move_value_type": 1,
-                        "value_type": 0
+                        "rectangle_corner_type": 1,
+                        "shape_feather_type": 3,
+                        "rectangle_corner_radius": 0.0,
+                        "scale_type": 1,
+                        "mask_source_mask_properties_list": 1,
+                        "mask_source_compression_list": 3,
+                        "mask_source": "Browser",
+                        "source_invert": false,
+                        "source_threshold_value": 0.84999999999999998,
+                        "source_range_min": 0.0,
+                        "source_range_max": 0.0,
+                        "mask_source_image": "C:/Users/Jonathan/OneDrive/09 Gifs/Happy-Animation1 133.gif",
+                        "shape_feather_amount": 0.0,
+                        "mask_type": 1,
+                        "shape_type": 1,
+                        "shape_center_x": 960.0,
+                        "shape_center_y": 540.0,
+                        "shape_rotation": 0.0,
+                        "rectangle_width": 1920.0,
+                        "rectangle_height": 1080.0,
+                        "position_x": 960.0,
+                        "position_y": 544.0,
+                        "position_scale": 100.0,
+                        "mask_source_filter_multiplier": 1.0,
+                        "source_zoom": 100.0,
+                        "shape_relative": true,
+                        "shape_num_sides": 6,
+                        "shape_corner_radius": 0.0,
+                        "shape_ellipse_a": 800.0,
+                        "shape_ellipse_b": 600.0,
+                        "shape_star_num_points": 5,
+                        "shape_star_outer_radius": 400.0,
+                        "shape_star_inner_radius": 50.0,
+                        "star_corner_radius": 0.0,
+                        "heart_size": 800.0,
+                        "circle_radius": 62.0,
+                        "gradient_invert": true,
+                        "mask_gradient_position": 960.0,
+                        "mask_gradient_width": 500.0,
+                        "mask_gradient_rotation": 0.0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -2210,13 +5338,51 @@
                 },
                 {
                     "prev_ver": 503316482,
-                    "name": "Color Correction",
-                    "uuid": "47324837-fa29-4996-ad1c-7e78c640fd92",
-                    "id": "color_filter",
-                    "versioned_id": "color_filter_v2",
+                    "name": "Move Value",
+                    "uuid": "1f8fb039-ffaa-4c28-acc5-411e6a552803",
+                    "id": "move_value_filter",
+                    "versioned_id": "move_value_filter",
                     "settings": {
-                        "saturation": -1.0,
-                        "color_multiply": 4278190080
+                        "value_type": 2,
+                        "filter": "Advanced Mask",
+                        "move_value_type": 1,
+                        "rectangle_corner_radius": 0,
+                        "rectangle_corner_type": 1,
+                        "scale_type": 1,
+                        "setting_float": 938,
+                        "setting_float_max": 930,
+                        "setting_float_min": 930,
+                        "setting_name": "shape_center_x",
+                        "shape_feather_type": 1,
+                        "shape_relative": true,
+                        "end_delay": 0,
+                        "mask_source_filter_multiplier": 1,
+                        "mask_gradient_position": 960,
+                        "shape_ellipse_a": 800,
+                        "shape_ellipse_b": 600,
+                        "shape_star_num_points": 5,
+                        "shape_star_outer_radius": 400,
+                        "shape_star_inner_radius": 50,
+                        "star_corner_radius": 0,
+                        "heart_size": 800,
+                        "source_range_min": 0,
+                        "source_range_max": 0,
+                        "mask_gradient_width": 500,
+                        "mask_gradient_rotation": 0,
+                        "shape_feather_amount": 0,
+                        "circle_radius": 529,
+                        "duration": 300,
+                        "easing_match": 0,
+                        "easing_function_match": 5,
+                        "shape_center_x": 960,
+                        "shape_center_y": 540,
+                        "shape_rotation": 0,
+                        "rectangle_width": 1920,
+                        "rectangle_height": 1080,
+                        "source_zoom": 100,
+                        "position_x": 960,
+                        "position_y": 544,
+                        "position_scale": 100
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -2237,16 +5403,166 @@
                 },
                 {
                     "prev_ver": 503316482,
-                    "name": "Move Blur Value",
-                    "uuid": "b582de19-5368-4c62-8284-d327575d0e7b",
+                    "name": "Shadow",
+                    "uuid": "965f6620-0e5d-43ac-a01c-6250481cbbd0",
+                    "id": "obs_shadow_filter",
+                    "versioned_id": "obs_shadow_filter",
+                    "settings": {
+                        "fill": false,
+                        "glow_size": 0,
+                        "glow_intensity": 200,
+                        "glow_fill_color": 4294911488,
+                        "glow_position": 2,
+                        "blur_type": 1,
+                        "glow_offset_angle": 0,
+                        "glow_offset_distance": 50,
+                        "ignore_source_border": false
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 503316482,
+                    "name": "Stroke",
+                    "uuid": "7a6546af-fc70-4960-82f5-f9b57a2ff531",
+                    "id": "obs_stroke_filter",
+                    "versioned_id": "obs_stroke_filter",
+                    "settings": {},
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 503316482,
+                    "name": "Display Capture Shadow",
+                    "uuid": "b6c4b4d5-91d2-47b3-9f8f-54ff73f96ac0",
+                    "id": "obs_shadow_filter",
+                    "versioned_id": "obs_shadow_filter",
+                    "settings": {
+                        "glow_offset_distance": 13.0,
+                        "glow_intensity": 83.599999999999994,
+                        "glow_size": 49.0
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 503316482,
+            "name": "Display Capture BG",
+            "uuid": "94cd6c43-f3b5-4170-a8af-c25b380a7160",
+            "id": "monitor_capture",
+            "versioned_id": "monitor_capture",
+            "settings": {
+                "monitor_id": "\\\\?\\DISPLAY#AUO23ED#5&2c8e85af&0&UID4353#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "Move Value Composite Blur": [],
+                "CompositeBlur.Enable": [],
+                "CompositeBlur.Disable": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 503316482,
+                    "name": "Composite Blur",
+                    "uuid": "6ac08b09-b064-44c5-8900-0937abbb7537",
+                    "id": "obs_composite_blur",
+                    "versioned_id": "obs_composite_blur",
+                    "settings": {
+                        "blur_algorithm": 4,
+                        "blur_type": 1,
+                        "pixelate_smoothing_pct": 49.600000000000001,
+                        "pixelate_rotation": -360.0,
+                        "radius": 1.0,
+                        "pixelate_origin_x": 6000.0,
+                        "pixelate_origin_y": 6000.0
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 503316482,
+                    "name": "Move Value Composite Blur",
+                    "uuid": "379f6687-1b4b-45a2-9ffc-cf9b1ac757ae",
                     "id": "move_value_filter",
                     "versioned_id": "move_value_filter",
                     "settings": {
                         "value_type": 0,
                         "filter": "Composite Blur",
                         "move_value_type": 1,
-                        "pixelate_smoothing_pct": 49.600000000000001,
                         "pixelate_rotation": -360,
+                        "pixelate_smoothing_pct": 49.600000000000001,
                         "radius": 1,
                         "pixelate_origin_x": 6000,
                         "pixelate_origin_y": 6000
@@ -2272,155 +5588,8 @@
         },
         {
             "prev_ver": 503316482,
-            "name": "Display Capture 2",
-            "uuid": "ee2c4ad3-9030-481b-b8a9-bb92b905f55b",
-            "id": "monitor_capture",
-            "versioned_id": "monitor_capture",
-            "settings": {
-                "monitor_id": "\\\\?\\DISPLAY#AUO23ED#5&2c8e85af&0&UID4353#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "Move Mask Position": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 503316482,
-                    "name": "Advanced Mask",
-                    "uuid": "2c4a232f-43b7-4db9-9f5c-4bfc74841892",
-                    "id": "advanced_masks_filter",
-                    "versioned_id": "advanced_masks_filter",
-                    "settings": {
-                        "rectangle_corner_type": 1,
-                        "shape_feather_type": 1,
-                        "rectangle_corner_radius": 0.0,
-                        "scale_type": 1,
-                        "shape_center_x": 960.0,
-                        "shape_center_y": 540.0,
-                        "shape_rotation": 0.0,
-                        "rectangle_width": 1920.0,
-                        "rectangle_height": 1080.0,
-                        "position_x": 960.0,
-                        "position_y": 544.0,
-                        "position_scale": 100.0,
-                        "source_zoom": 100.0,
-                        "shape_relative": true,
-                        "mask_gradient_position": 960.0
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 503316482,
-                    "name": "Move Mask Position",
-                    "uuid": "ceca6cb4-9dee-4ee7-926f-384bf55f1e6a",
-                    "id": "move_value_filter",
-                    "versioned_id": "move_value_filter",
-                    "settings": {
-                        "value_type": 2,
-                        "move_value_type": 1,
-                        "rectangle_corner_radius": 0,
-                        "setting_name": "shape_center_x",
-                        "setting_float": 938,
-                        "setting_float_min": 930,
-                        "setting_float_max": 930,
-                        "mask_gradient_position": 960,
-                        "rectangle_corner_type": 1,
-                        "scale_type": 1,
-                        "shape_feather_type": 1,
-                        "shape_relative": true,
-                        "mask_source_filter_multiplier": 1,
-                        "duration": 300,
-                        "shape_center_x": 960,
-                        "shape_center_y": 540,
-                        "shape_rotation": 0,
-                        "rectangle_width": 1920,
-                        "rectangle_height": 1080,
-                        "source_zoom": 100,
-                        "position_x": 960,
-                        "position_y": 544,
-                        "position_scale": 100,
-                        "filter": "Advanced Mask"
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 503316482,
-                    "name": "Shadow",
-                    "uuid": "98ec0dd5-a969-46b9-afaa-75529fec8047",
-                    "id": "obs_shadow_filter",
-                    "versioned_id": "obs_shadow_filter",
-                    "settings": {
-                        "glow_size": 37.0,
-                        "glow_intensity": 30.300000000000001,
-                        "glow_fill_color": 4291151301
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
-        },
-        {
-            "prev_ver": 503316482,
             "name": "Scene",
-            "uuid": "56dd001d-afe7-4dcb-991a-3ea4d1c3d9ab",
+            "uuid": "153ac0e8-e6cb-4b3e-a157-7872cf9987bd",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
@@ -2428,8 +5597,8 @@
                 "custom_size": false,
                 "items": [
                     {
-                        "name": "Display Capture",
-                        "source_uuid": "fe40a384-d93b-4f86-adc1-ac4faa3cb5b1",
+                        "name": "Display Capture BG",
+                        "source_uuid": "94cd6c43-f3b5-4170-a8af-c25b380a7160",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -2452,7 +5621,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 4,
+                        "id": 3,
                         "group_item_backup": false,
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -2466,14 +5635,14 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Display Capture 2",
-                        "source_uuid": "ee2c4ad3-9030-481b-b8a9-bb92b905f55b",
+                        "name": "Display Capture",
+                        "source_uuid": "49ab94c8-f395-4827-995d-bfc0265d213a",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "pos": {
                             "x": 0.0,
-                            "y": -4.0
+                            "y": 0.0
                         },
                         "scale": {
                             "x": 1.0,
@@ -2483,14 +5652,14 @@
                         "bounds_type": 0,
                         "bounds_align": 0,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 5,
+                        "id": 1,
                         "group_item_backup": false,
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -2518,10 +5687,10 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": [],
-                "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
